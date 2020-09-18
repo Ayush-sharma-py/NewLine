@@ -41,4 +41,11 @@ def file_append(file_dir:str,content,v = True):
             f.write("\n")
     return "File Overwritten"
 
-file_append("C:\\Users\\Ayush Sharma\\Desktop\\Programs\\newline_test.txt",[[1,2,3],[2,3],[3,4],[5,6]],True)
+def read_line(file_dir:str,line:list):
+    data = []
+    for i in line:
+        data.append(file_read(file_dir)[i-1])
+    return data
+    
+
+print(read_line("C:\\Users\\Ayush Sharma\\Desktop\\Programs\\NewLine\\newline_test.txt",[2,3,4]))
