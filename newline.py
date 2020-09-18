@@ -8,6 +8,7 @@ def help():
     print("folder_read : Will read data from the given folder directory in a CSV format!")
     print("read_line : Will read a specefic line in the CSV format file!")
     print("raw_data : Will return raw data!")
+    print("flatten : Will flatten the file to be readable in CSV format so that other functions can work!")
     print("TIP : Give all data to write in List[List] format")
     
 
@@ -64,3 +65,13 @@ def raw_data(dir:str):
         f.close()
     return data
 
+def flatten(dir:str,alt_dir = False,v = True,):
+    data = raw_data(dir)
+    data = data.split("\n")
+    content = []
+    for i in data:
+        content.append(i.split(" "))
+    if not alt_dir:
+        file_write(dir,content,v=v)
+    else:
+        file_write(alt_dir,content,v=v)
