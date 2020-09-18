@@ -9,6 +9,7 @@ def help():
     print("read_line : Will read a specefic line in the CSV format file!")
     print("raw_data : Will return raw data!")
     print("flatten : Will flatten the file to be readable in CSV format so that other functions can work!")
+    print("unicoder : Will convert directory string into Unicode string")
     print("TIP : Give all data to write in List[List] format")
     
 
@@ -75,3 +76,7 @@ def flatten(dir:str,alt_dir = False,v = True,):
         file_write(dir,content,v=v)
     else:
         file_write(alt_dir,content,v=v)
+
+def unicoder(dir:str):
+    return dir.replace("/","//")
+
