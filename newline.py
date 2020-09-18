@@ -7,7 +7,9 @@ def help():
     print("file_read : Will read data in the given file directory in a CSV format and return it in a list[list] format where each item of the list is a row!")
     print("folder_read : Will read data from the given folder directory in a CSV format!")
     print("read_line : Will read a specefic line in the CSV format file!")
+    print("raw_data : Will return raw data!")
     print("TIP : Give all data to write in List[List] format")
+    
 
 def file_read(file_dir:str):
     with open(file_dir,"r") as f:
@@ -55,3 +57,10 @@ def read_line(file_dir:str,line:list):
     for i in line:
         data.append(file_read(file_dir)[i-1])
     return data
+
+def raw_data(dir:str):
+    with open(dir,"r") as f:
+        data = f.read()
+        f.close()
+    return data
+
