@@ -1,5 +1,14 @@
 import os
 
+def help():
+    print("Here CSV format means comma seperated values you can use excel to open these kinds of files")
+    print("file_write : Will write data in the given file directory and deletes the previous data!")
+    print("file_append : Will append/add data in the given file directory!")
+    print("file_read : Will read data in the given file directory in a CSV format and return it in a list[list] format where each item of the list is a row!")
+    print("folder_read : Will read data from the given folder directory in a CSV format!")
+    print("read_line : Will read a specefic line in the CSV format file!")
+    print("TIP : Give all data to write in List[List] format")
+
 def file_read(file_dir:str):
     with open(file_dir,"r") as f:
         data = f.read()
@@ -46,6 +55,3 @@ def read_line(file_dir:str,line:list):
     for i in line:
         data.append(file_read(file_dir)[i-1])
     return data
-    
-
-print(read_line("C:\\Users\\Ayush Sharma\\Desktop\\Programs\\NewLine\\newline_test.txt",[2,3,4]))
