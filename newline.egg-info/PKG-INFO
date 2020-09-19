@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: newline
+Version: 0.0.1
+Summary: A small package to make it easy to store data in CSV format using python
+Home-page: https://github.com/Ayush-sharma-py/NewLine.git
+Author: Ayush Sharma
+Author-email: ayushsharma14@gmail.com
+License: UNKNOWN
+Description: # NewLine
+        Newline Project Initiative
+        This is a project to help python programmers to store data in text file under CSV format.
+        Please make sure that all input for writing in a file is in list[list].
+        All the data to read and write is in CSV format.
+        In list[list] format list[0] is the first line list[1] is the second line and from this on forward.
+        You can open and edit all files created in excel.
+        This Project has just started and will be updated constantly
+        
+        GitHub for this project - https://github.com/Ayush-sharma-py/NewLine.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU GPLv3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
