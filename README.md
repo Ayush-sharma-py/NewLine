@@ -7,4 +7,6 @@ In list[list] format list[0] is the first line list[1] is the second line and fr
 You can open and edit all files created in excel.
 This Project has just started and will be updated constantly
 
+**Use newline.help() in your python project to get a overview of all functions**
+
 GitHub for this project - https://github.com/Ayush-sharma-py/NewLine.git
