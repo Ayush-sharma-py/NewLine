@@ -18,7 +18,7 @@ Description: # NewLine
         GitHub for this project - https://github.com/Ayush-sharma-py/NewLine.git
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: GNU GPLv3
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
